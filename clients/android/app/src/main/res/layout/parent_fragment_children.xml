@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controllers.Parent.Fragments.ParentChildren"
+    android:layout_marginTop="10dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/profile_margin"
+            android:layout_marginTop="@dimen/profile_frame_margin"
+            android:layout_marginRight="@dimen/profile_margin"
+            android:layout_marginBottom="8dp"
+            android:text="@string/parent_fragment_children_infos_title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="@dimen/profile_margin"
+            android:layout_marginRight="@dimen/profile_margin"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/profile_margin"
+            android:layout_marginRight="@dimen/profile_margin"
+            android:text="@string/parent_fragment_children_infos_body"
+            android:textSize="@dimen/default_text_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="@dimen/profile_margin"
+            android:layout_marginRight="@dimen/profile_margin"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/formText">
+
+            <EditText
+                android:id="@+id/et_parent_child_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/parent_fragment_children_key"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:autofillHints="" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+
+            android:id="@+id/bt_parent_add_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/parent_fragment_children_add"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/textDefault"
+            android:layout_margin="5dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_parent_empty_children"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/parent_fragment_children_empty"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:visibility="invisible"
+            />
+        <LinearLayout
+            android:id="@+id/ll_parent_children"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/parent_fragment_children_list"
+                android:textSize="25dp"
+                android:paddingLeft="5dp"
+                android:textColor="@android:color/black"
+                />
+
+            <ListView
+                android:id="@+id/lv_parent_list_children"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="8dp"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/profile_margin"
+                android:layout_marginTop="@dimen/profile_margin"
+                android:layout_marginRight="@dimen/profile_margin"
+                android:layout_marginBottom="8dp"
+                android:text="@string/profile_title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="@dimen/profile_margin"
+                android:layout_marginRight="@dimen/profile_margin"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/profile_margin"
+                android:paddingTop="@dimen/profile_frame_padding"
+                android:paddingRight="@dimen/profile_margin"
+                android:paddingBottom="@dimen/profile_frame_padding">
+
+                <TextView
+                    android:id="@+id/profile_last_name_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@string/profile_last_name"
+                    android:textSize="@dimen/default_text_size" />
+
+                <!-- INPUT -->
+                <TextView
+                    android:id="@+id/profile_last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:enabled="false"
+                    android:singleLine="true"
+                    android:text="lname_holder"
+                    android:textSize="@dimen/default_text_size" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/profile_margin"
+                android:paddingTop="@dimen/profile_frame_padding"
+                android:paddingRight="@dimen/profile_margin"
+                android:paddingBottom="@dimen/profile_frame_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_first_name"
+                    android:textSize="@dimen/default_text_size" />
+
+                <!-- INPUT -->
+                <TextView
+                    android:id="@+id/profile_first_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:enabled="false"
+                    android:singleLine="true"
+                    android:text="fname_holder"
+                    android:textSize="@dimen/default_text_size" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/profile_margin"
+                android:paddingRight="@dimen/profile_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textAutoComplete|textEmailAddress"
+                    android:paddingTop="@dimen/profile_frame_padding"
+                    android:text="@string/profile_email"
+                    android:textSize="@dimen/default_text_size" />
+
+                <!-- INPUT -->
+                <EditText
+                    android:id="@+id/profile_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="@dimen/profile_margin"
+                android:layout_marginTop="@dimen/profile_margin"
+                android:layout_marginRight="@dimen/profile_margin"
+                android:layout_marginBottom="@dimen/profile_margin"
+                android:background="@color/textSecondary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/profile_margin"
+                android:paddingRight="@dimen/profile_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/profile_frame_padding"
+                    android:text="@string/profile_current_password"
+                    android:textSize="@dimen/default_text_size" />
+
+                <!-- INPUT -->
+                <EditText
+                    android:id="@+id/profile_curent_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/profile_margin"
+                android:paddingRight="@dimen/profile_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/profile_frame_padding"
+                    android:text="@string/profile_new_password"
+                    android:textSize="@dimen/default_text_size" />
+
+                <!-- INPUT -->
+                <EditText
+                    android:id="@+id/profile_new_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/profile_margin"
+                android:paddingTop="@dimen/profile_frame_padding"
+                android:paddingRight="@dimen/profile_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="@dimen/profile_frame_padding"
+                    android:text="@string/profile_new_password_confirmation"
+                    android:textSize="@dimen/default_text_size" />
+
+                <!-- INPUT -->
+                <EditText
+                    android:id="@+id/profile_new_password_confirmation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:inputType="textPassword"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/profile_submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/profile_margin"
+                android:layout_marginTop="@dimen/profile_margin"
+                android:layout_marginRight="@dimen/profile_margin"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="@string/profile_validate"
+                android:textColor="@color/textDefault" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:baselineAligned="false"
+    android:padding="5dp"
+    android:background="@drawable/adapter_courses_course_item"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/exercice_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textSize="20dp"
+            android:textColor="@color/textSecondary"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Controllers.Parent.Activities.CourseChoiceActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/parent_offer_text"
+            android:textSize="30dp"
+            android:textColor="@color/textSecondary"
+            android:layout_marginBottom="10dp"
+            />
+
+        <ListView
+            android:id="@+id/lv_parent_course_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="8dp"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_parent_course_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="@string/parent_offer_submit"
+            android:textColor="@color/textDefault"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

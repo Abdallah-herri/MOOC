@@ -1,0 +1,9 @@
+-- Déjà modéliser --
+> associer enfant à une matière
+> upload fichier excercice
+
+-- À modéliser --
+> progression de l'élève (système de cours complétion qui rapporte des points)
+> recommandations (recommander de suivre la matière avec le moins de point)
+> système de message
+> système de rappel

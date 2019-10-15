@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Controllers.Child.Fragments.ChildProfile">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/profile_margin"
+                android:layout_marginTop="@dimen/profile_frame_margin"
+                android:layout_marginRight="@dimen/profile_margin"
+                android:layout_marginBottom="8dp"
+                android:text="@string/profile_child_key"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="@dimen/profile_margin"
+                android:layout_marginRight="@dimen/profile_margin"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/profile_margin"
+                android:layout_marginRight="@dimen/profile_margin"
+                android:text="@string/profile_child_key_desc"
+                android:textSize="@dimen/default_text_size" />
+
+            <EditText
+                android:id="@+id/profile_child_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/profile_margin"
+                android:layout_marginRight="@dimen/profile_margin"
+                android:enabled="false"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/profile_child_copy_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/profile_margin"
+                    android:layout_marginRight="@dimen/profile_margin"
+                    android:layout_weight=".5"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:text="@string/profile_button_copy"
+                    android:textColor="@color/textDefault" />
+
+                <ImageButton
+                    android:id="@+id/profile_child_share_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/profile_margin"
+                    android:layout_weight=".5"
+                    android:actionProviderClass="android.widget.ShareActionProvider"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:src="@android:drawable/ic_menu_share"
+                    android:title="Share" />
+
+            </LinearLayout>
+
+            <include layout="@layout/common_profile"></include>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

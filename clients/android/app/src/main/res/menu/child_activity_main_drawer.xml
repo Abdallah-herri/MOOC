@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/child_nav_profile"
+            android:icon="@drawable/ic_menu_profile"
+            android:title="@string/menu_profile"
+            android:checked="true"/>
+        <item
+            android:id="@+id/child_nav_courses"
+            android:icon="@drawable/ic_menu_courses"
+            android:title="@string/menu_courses" />
+        <item
+            android:id="@+id/child_nav_marks"
+            android:icon="@drawable/ic_menu_marks"
+            android:title="@string/menu_marks" />
+        <item
+            android:id="@+id/child_nav_history"
+            android:icon="@drawable/ic_menu_history"
+            android:title="@string/menu_history" />
+        <!--<item-->
+            <!--android:id="@+id/child_nav_planning"-->
+            <!--android:icon="@drawable/ic_menu_planning"-->
+            <!--android:title="@string/menu_planning" />-->
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/child_nav_disconnect"
+            android:icon="@drawable/ic_menu_disconnect"
+            android:title="@string/menu_disconnect" />
+    </group>
+
+</menu>

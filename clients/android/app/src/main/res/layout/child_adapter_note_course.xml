@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/child_note_year"
+    android:layout_height="50dp"
+    android:layout_width="match_parent"
+    android:baselineAligned="false"
+    android:padding="5dp"
+    android:background="@drawable/adapter_courses_course_item"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight=".3"
+
+        >
+
+        <TextView
+            android:id="@+id/child_adapter_note_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textSize="15dp"
+            android:textColor="@color/textSecondary"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:layout_alignParentRight="true"
+        >
+        <TextView
+            android:id="@+id/child_adapter_note_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="15"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="/20"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    android:fitsSystemWindows="true"
+    tools:context=".Controllers.Guest.GuestMainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <LinearLayout
+                style="attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom|end"
+                android:orientation="horizontal"
+                app:layout_collapseMode="pin">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/guest_home_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:onClick="changeContext"
+                        android:text="@string/welcome_text"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:id="@+id/guest_home_underline"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/guest_signup_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:onClick="changeContext"
+                        android:text="@string/signup_text"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:id="@+id/guest_signup_underline"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/guest_login_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:onClick="changeContext"
+                        android:text="@string/login_text"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:id="@+id/guest_login_underline"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        android:id="@+id/welcome_page"
+        layout="@layout/guest_content_start" />
+
+    <include
+        android:id="@+id/login_page"
+        layout="@layout/guest_login" />
+
+    <include
+        android:id="@+id/signup_page"
+        layout="@layout/guest_signup" />
+
+</android.support.design.widget.CoordinatorLayout>
